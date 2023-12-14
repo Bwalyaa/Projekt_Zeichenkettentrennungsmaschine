@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="separationBox">
+            <h1>Zeichen ketten Trennungs maschine</h1>
+            <form id="separationForm">
+                <label for="inputSentence">Zu trennende ZeichenKette</label><br>
+                <input type="text" id="inputText" class="inputField"><br>
+                <label for="inputTrennung">Trennen bei Zeichenkette</label><br>
+                <input type="text" id="inputText2" class="inputField">
+
+                <div class="entwederOderButton">
+                    <input type="radio" name="radio" id="davor" value="davor">
+                    <label for="davor">davor trennen</label>
+                    <input type="radio" name="radio" id="danach" value="danach">
+                    <label for="danach">danach trennen</label>
+                    <button type="button" onclick="searchSeparation(); return false">Hier clicken</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Ausgabe</h2>
+            <h2>Vorderer Teil</h2>
+            <p class="resultFront"></p>
+
+            <h2>Hinterer Teil</h2>
+            <p class="resultEnd"></p>
+        </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
